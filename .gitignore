@@ -1,0 +1,23 @@
+# Binaries
+llama-metrics
+llama-metrics.exe
+*.exe
+
+# Go
+vendor/
+
+# AI tool directories
+.cheetahclaws/
+.nano_claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+goal.md

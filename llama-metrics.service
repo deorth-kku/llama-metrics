@@ -1,0 +1,14 @@
+[Unit]
+Description=llama-metrics: Prometheus metrics aggregator for llama.cpp router mode
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/llama-metrics -listen :8085 -upstream http://127.0.0.1:8080
+Restart=on-failure
+RestartSec=5
+User=nobody
+Group=nobody
+
+[Install]
+WantedBy=multi-user.target
